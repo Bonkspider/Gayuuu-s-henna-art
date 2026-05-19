@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Palette & tokens (luxury Arabic / Dubai wedding vibe) --- */
+:root {
+  --background: #f8f1e7;
+  --foreground: #4a3428;
+
+  --primary: #7b4b2a;
+  --secondary: #c49a6c;
+  --accent: #e8d5c4;
+
+  --card-bg: #fffaf5;
+  --border-color: #dcc2aa;
+}
+
+/* Smooth scrolling for refined navigation */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-dark);
+}
+
+/* Page base */
+body {
+  margin: 0;
+  background-color: var(--bg-dark);
+  color: var(--ivory);
+  font-family: var(--font-poppins);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings: regal, cinematic */
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-cinzel);
+  color: var(--ivory);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  text-rendering: optimizeLegibility;
+}
+
+/* Large display heading helper for hero */
+.cinzel-display {
+  font-family: var(--font-cinzel);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 0.98;
+  text-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  color: var(--ivory);
+}
+
+/* Brand / logo */
+.brand-logo {
+  font-family: var(--font-cinzel);
+  font-weight: 700;
+  color: var(--ivory);
+  letter-spacing: 0.02em;
+  font-size: 1.05rem;
+}
+
+/* Paragraphs and UI elements use Poppins for clarity */
+p,a,span,li,button,input,textarea,select,label {
+  font-family: var(--font-poppins);
+  color: var(--ivory);
+}
+
+/* Muted text */
+.text-muted {
+  color: rgba(239,231,215,0.8);
+  font-size: 0.95rem;
+}
+
+/* Gold utility */
+.text-gold {
+  color: var(--muted-gold);
+}
+
+/* Card / glass surfaces */
+.surface {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid var(--subtle-border);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  color: var(--ivory);
+}
+
+/* Buttons - premium styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 0.6rem 1.1rem;
+  font-weight: 600;
+  transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+  will-change: transform, box-shadow;
+  cursor: pointer;
+  border: 0;
+}
+
+/* Primary: warm brown -> muted gold */
+.btn-primary {
+  background: linear-gradient(90deg, var(--accent-warm) 0%, var(--muted-gold) 100%);
+  color: var(--matte-espresso);
+  box-shadow: 0 14px 40px var(--gold-shadow);
+}
+.btn-primary:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(191,164,105,0.18); }
+.btn-primary:active { transform: translateY(-1px); }
+
+/* Secondary: ghost / elegant outlined */
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(191,164,105,0.12);
+  color: var(--ivory);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.45);
+}
+.btn-ghost:hover { background: rgba(255,255,255,0.02); transform: translateY(-2px); }
+
+/* Small subtle icon/button styles */
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 10px;
+  display: inline-grid;
+  place-items: center;
+  background: var(--glass);
+  border: 1px solid var(--glass-strong);
+}
+
+/* Form elements */
+input, textarea, select {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.04);
+  color: var(--ivory);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: box-shadow .15s ease, transform .12s ease;
+}
+input:focus, textarea:focus, select:focus {
+  box-shadow: 0 6px 22px rgba(0,0,0,0.6), 0 0 0 4px rgba(191,164,105,0.06);
+  transform: translateY(-1px);
+}
+
+/* Links */
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--muted-gold); }
+
+/* Utility spacing tweaks (luxurious rhythm) */
+.rhythm-tight { margin-top: .25rem; margin-bottom: .5rem; }
+.rhythm { margin-top: .75rem; margin-bottom: 1.25rem; }
+.rhythm-loose { margin-top: 1.5rem; margin-bottom: 2rem; }
+
+/* Footer subtle */
+.site-footer { border-top: 1px solid rgba(255,255,255,0.03); background: linear-gradient(0deg, rgba(0,0,0,0.25), transparent); }
+
+/* Images */
+img { display: block; max-width: 100%; height: auto; object-fit: cover; }
+
+/* Accessibility: focus visible */
+:focus { outline: none; }
+:focus-visible { outline: 3px solid rgba(191,164,105,0.12); outline-offset: 3px; }
+
+/* Small screens adjustments for premium spacing */
+@media (max-width: 640px) {
+  .cinzel-display { font-size: 2.25rem; line-height: 1.02; }
+  .brand-logo { font-size: 1rem; }
+  .btn { padding: 0.55rem 0.9rem; }
+}
+
+/* End of globals */
