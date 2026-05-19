@@ -63,7 +63,7 @@ export default function Navbar() {
               aria-label="Hennart Mehendi - Home"
             >
               <Image
-                src="/logo/logo.jpg"
+                src="/images/logo.png"
                 alt="Gayu's Logo"
                 width={48}
                 height={48}
