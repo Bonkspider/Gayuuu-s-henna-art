@@ -8,11 +8,15 @@ const IMAGES: { id: number; src: string; alt: string; category: (typeof CATEGORI
 	{ id: 1, src: "/images/henna.jpg", alt: "Bridal mehendi design 1", category: "Bridal" },
 	{ id: 2, src: "/images/henna2.jpg", alt: "Bridal mehendi design 2", category: "Bridal" },
 	{ id: 3, src: "/images/henna3.jpg", alt: "Arabic mehendi design 1", category: "Arabic" },
-	{ id: 4, src: "/images/henna2.jpg", alt: "Minimal mehendi design 1", category: "Minimal" },
-	{ id: 5, src: "/images/henna3.jpg", alt: "Traditional mehendi design 1", category: "Traditional" },
-	{ id: 6, src: "/images/henna.jpg", alt: "Arabic mehendi design 2", category: "Arabic" },
-	{ id: 7, src: "/images/henna3.jpg", alt: "Minimal mehendi design 2", category: "Minimal" },
-	{ id: 8, src: "/images/henna2.jpg", alt: "Traditional mehendi design 2", category: "Traditional" },
+	{ id: 4, src: "/images/henna4.jpg", alt: "Minimal mehendi design 1", category: "Minimal" },
+	{ id: 5, src: "/images/henna5.jpg", alt: "Traditional mehendi design 1", category: "Traditional" },
+	{ id: 6, src: "/images/henna6.jpg", alt: "Arabic mehendi design 2", category: "Arabic" },
+	{ id: 7, src: "/images/henna7.jpg", alt: "Minimal mehendi design 2", category: "Minimal" },
+	{ id: 8, src: "/images/henna8.jpg", alt: "Traditional mehendi design 2", category: "Traditional" },
+	{ id: 9, src: "/images/henna9.jpg", alt: "Traditional mehendi design 2", category: "Traditional" },
+	{ id: 10, src: "/images/henna10.jpg", alt: "Traditional mehendi design 2", category: "Traditional" },
+	{ id: 11, src: "/images/henna11.jpg", alt: "Traditional mehendi design 2", category: "Traditional" },
+	{ id: 12, src: "/images/henna12.jpg", alt: "Traditional mehendi design 2", category: "Traditional" },
 ];
 
 export default function Gallery() {

@@ -80,7 +80,7 @@ export default function Hero() {
             <div className="rounded-[28px] overflow-hidden bg-[rgba(245,240,235,0.9)] border border-[rgba(59,41,33,0.04)] shadow-[0_24px_60px_rgba(22,12,8,0.08)]">
               <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] md:aspect-[5/6]">
                 <Image
-                  src="/images/henna.jpg"
+                  src="/images/henna9.jpg"
                   alt="Bridal mehendi close up"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 40vw"
